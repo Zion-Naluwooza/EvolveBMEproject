@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Navbar styles */
+nav {
+  background-color: rgb(214, 214, 214);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  height: 60px;
+}
+
+/* .company-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+} */
+
+.menu-items ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.menu-items ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.home {
+  background-color: rgb(145, 115, 115);
+  background-image: url(https://cdn.pixabay.com/photo/2024/01/10/16/12/woman-8499902_1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* enabling flexbox */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* not for the flexbox */
+  padding: 100px;
+  margin: 0px;
+  box-sizing: border-box;
+  width: 100;
+  height: 500;
+  justify-items: left;
+}
+
+.home-heading {
+  font-family: "Gill Sans", sans-serif;
+  font-size: larger;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-top: 0px;
+  color: rgb(252, 252, 252) ;
+}
+.sub {
+
+  color: white;
+  margin-bottom: 80px;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #182c42;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: gray
+    ;
+}
+
+.logo {
+  padding: 50px 50px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.home-heading:hover {
+
+  background-color: black;
+}
+
+.sub:hover {
+  color: black;
+
+}
