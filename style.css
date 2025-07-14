@@ -33,12 +33,53 @@ nav {
   font-size: larger;
 }
 
+.background {
+  background-color: rgb(145, 115, 115);
+  background-image: url(https://cdn.pixabay.com/photo/2024/01/10/16/12/woman-8499902_1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* When you absolutely position an element (position: absolute;), 
+  it’s positioned relative to its nearest positioned ancestor 
+  (the first parent with position: relative;, absolute;, or fixed;).
+  If you don’t specify top, left, right, or bottom, the browser doesn’t
+ know where to place it, so the element stays at its default position — 
+ which may be outside the visible area of its parent.
+ top: 0; left: 0; pins the absolutely positioned element to the top-left corner of its containing block. */
+
+  width: 100%;  /* fills the card width */
+  height: 100%; /* keeps original aspect ratio so the image doesnt look stretched or squished */
+  background-position: center;
+  background-size: cover;
+  filter: blur(8px); /* adjusts blur intensity */
+  z-index: 1;
+/* The z-index property controls the stacking order of positioned elements 
+on the z-axis (the front-to-back order on the page).
+Elements with higher z-index values appear in front of lower ones. */
+/* z-index only works on positioned elements 
+(position: relative;, absolute;, fixed;, or sticky). 
+If you don’t set a position, z-index has no effect. */
+}
+
+.content {
+  /* position: relative; */
+  z-index: 2;
+  color: white; /* make sure text is visible on blurred background */
+  display: flex; /* to make sure that our words are centered, this has to be activated */
+  flex-direction: column; /* to flex our words in the column, not row */
+  align-items: center;
+  justify-content: center;
+}
 .home {
   background-color: rgb(145, 115, 115);
   background-image: url(https://cdn.pixabay.com/photo/2024/01/10/16/12/woman-8499902_1280.jpg);
   background-position: center;
   background-repeat: no-repeat;
-
+  
+  position: relative;
   /* enabling flexbox */
   display: flex;
   flex-direction: column;
@@ -58,28 +99,28 @@ nav {
   margin-top: 0px;
   margin-bottom: 50px;
   padding-top: 0px;
-  color: rgb(252, 252, 252) ;
+  color: rgb(252, 252, 252);
 }
 .sub {
-
   color: white;
   margin-bottom: 80px;
 }
 
 .cta-button {
-    padding: 12px 24px;
-    font-size: 16px;
-    background-color: #182c42;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
+  padding: 12px 24px;
+  /* margin-top: 35px;
+    /* margin-bottom: 35; trying to add space above the hover box in the projects section so that the words are visible */
+  font-size: 16px;
+  background-color: #182c42;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; /* removes the hyperlink look on the anchor tagged elements */
+  cursor: pointer;
 }
 
 .cta-button:hover {
-    background-color: gray
-    ;
+  background-color: gray;
 }
 
 .logo {
@@ -89,11 +130,261 @@ nav {
 }
 
 .home-heading:hover {
-
   background-color: black;
 }
 
 .sub:hover {
   color: black;
+}
 
+.about {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);  /* This moves the element upward by 5px. 
+  Negative Y means up, positive Y means down. It creates a smooth “lift” effect. */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.about-box h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #182c42;
+}
+
+.about-box p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.projects {
+  padding: 80px 20px;
+  background-color: #182c42;
+  text-align: center;
+}
+
+.projects h2 {
+  font-family: "Gill Sans", "Gill Sans MT";
+  color: white;
+  font-size: 36px;
+}
+
+.project-container {
+  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 0;
+  /* display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+overflow: visible; */
+}
+
+.project-box {
+  background-color: white;
+  padding: 70px 70px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform-origin: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-box:hover {
+  transform: scale(1.5);
+  overflow: visible;
+  z-index: 10;
+}
+
+.cta-button2 {
+  /* display: flex; */
+  align-items: center;
+  text-decoration: none;
+  padding: 15px 5px;
+  margin-top: 30px;
+  background-color: #182c42;
+  border-radius: 10px;
+  color: white;
+}
+
+.users {
+  background-color: gainsboro;
+  padding: 70px 50px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.users-container {
+  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 0;
+}
+
+.users-box {
+  background-color: #182c42;
+  padding: 50px 20px;
+  color: white;
+  border-radius: 50px;
+}
+
+.users-box a h3 {
+  color: white;
+  text-decoration: none;
+}
+
+.site-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 50px 30px;
+  margin-top: 60px;
+}
+
+.site-footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-content p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #0056b3;
+}
+
+.signup-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
