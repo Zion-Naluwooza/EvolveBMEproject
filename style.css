@@ -305,8 +305,8 @@ overflow: visible; */
   background-color: #fff;
 }
 
-h2 {
-  font-size: 2rem;
+h2 {      /* element selector that targets all h2 headings on the page */
+  font-size: 2rem; 
   margin-bottom: 20px;
 }
 
