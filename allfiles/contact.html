@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
+    
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Projects</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-    <nav>
-      <!-- div for the school name -->
+      <head>
+       <!-- div for the school name -->
 
       <!-- <div class="company-name">EVOLVE BIOMEDICAL ENGINEERING</div> -->
       <div class="logo"> <img src="images/E-logo.png" width="200px" height="150px" /></div>
@@ -25,32 +24,65 @@
           <li><a href="allfiles/users.html">Users
             </a></li>
           <li><a href="allfiles/contact.html">Contact</a></li>
+
         </ul>
       </div>
     </nav>
-
-
-       <section class="projects">
-    <h2>Projects Dashboard</h2>
-    <div class="project-container">
-      <div class="project-box">
-        <h3>Hemolink</h3>
-        <div class="project-icons"><img src="images/hemolink.jpg" width="100px" height="100%"></div>
-        <p>An innovative platform designed to streamline blood donation, bridging the gap in the blood supply chain
-          between donors and medical facilities in urgent need</p>
-        <a href="users.html" class="cta-button2">Join the Team</a>
+        <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-title">
+        <h2>Contact Us</h2>
       </div>
-      <div class="project-box">
-        <h3>The Wound-Care Project</h3>
-        <div class="project-icons"><img src="images/bandage-1235337_1280.jpg" width="100px" height="100%"></div>
-        <p>Aims to investigate the extent of chronic wounds in Uganda, explore the current policies and guidelines
-          associated with wound care practices to ultimately create opportunity for innovative solutions and technology
-        </p>
-        <a href="users.html" class="cta-button2">Join the Team</a>
+      <div class="question-side">
+        <h3>Have A Question?</h3>
+        <p>Please fill out the form below and we will get right back at you.</p>
+        <div class="form-container" >
+        <form action="#" method="post">
+          <div class="form-fields">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
 
+          <div class="form-fields">
+            <label for="name">Email</label>
+            <input type="text" id="email" name="email" required />
+          </div>
+
+          <div class="form-fields">
+            <label for="name">Phone</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <div class="form-fields">
+            <label for="name">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+
+          <div class="form-fields">
+            <label for="name">Message</label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+          </div>
+          </div>
+        </form>
       </div>
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p>Our team would love to hear from you</p>
 
+        <h4 class="info-heading"><img src="https://cdn.pixabay.com/photo/2012/04/26/19/04/pin-42871_640.png" width="30px" alt="Address icon"><span>Address</span></h4>
+        <p>Uganda</p>
+
+        <h4 class="info-heading"><img src="https://cdn.pixabay.com/photo/2016/04/16/10/32/icon-1332774_640.png" width="30px"  alt="Email icon"><span>Email</span></h4>
+        <p>evolvebiomedical.company@gmail.com</p>
+
+        <h4 class="info-heading"><img src="https://cdn.pixabay.com/photo/2016/11/21/08/44/phone-1844470_640.png" width="50px" alt="Phone icon"><span>Phone</span></h4>
+        <p>+256 771995664</p>
+      </div>
     </div>
+    
+  
   </section>
 
   <footer class="footer-section">
@@ -106,6 +138,9 @@
  
       <p>&copy; EvolveBioMedicalEngineering.com <br> All rights reserved.</p>
 </footer>
+
+
+
 
     </body>
 </html>
