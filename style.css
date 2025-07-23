@@ -391,6 +391,9 @@ overflow: visible; */
       "content"
       "form";
   }
+  .contact-title {
+    padding: 0px;
+  }
 }
 
 .contact-title {
@@ -408,7 +411,8 @@ overflow: visible; */
 }
 .question-side {
   padding: 0px 100px;
-  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .question-side h3 {
   text-align: start;
@@ -492,6 +496,10 @@ button:hover {
 }
 .team h2 {
   text-align: center;
+  margin-bottom: 20px;
+}
+.team p {
+  margin-bottom: 50px;
 }
 .team-container {
   display: grid;
