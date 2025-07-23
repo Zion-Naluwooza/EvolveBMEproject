@@ -1,9 +1,20 @@
 * {
+  /* To ensure padding is included inside an element’s width, not added to it. */
+  *::before,
+*::after {
+  box-sizing: border-box;
+}
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 
 /* Navbar styles */
 nav {
@@ -394,6 +405,14 @@ overflow: visible; */
   .contact-title {
     padding: 0px;
   }
+
+  .question-side {
+  padding: 0px 20px;
+  }
+  .contact-info {
+  padding: 40px 20px;
+  margin-bottom: 0px;
+  }
 }
 
 .contact-title {
@@ -410,7 +429,7 @@ overflow: visible; */
   text-align: center;
 }
 .question-side {
-  padding: 0px 100px;
+  padding: 0px 40px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -463,7 +482,8 @@ button:hover {
 }
 .contact-info {
   background-color: #7784b1;
-  padding: 100px;
+  padding: 60px 40px;
+  margin-bottom: 10px;
 }
 .contact-info h3 {
   margin-bottom: 10px;
