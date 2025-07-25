@@ -58,7 +58,7 @@ nav {
 }
 
 .menu-items ul li a {
-  color: #3b5f85;
+  color: #072e65;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
@@ -78,7 +78,7 @@ nav {
 /* Responsive layout */
 @media (min-width: 768px) {
   nav {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
      align-items: center;
