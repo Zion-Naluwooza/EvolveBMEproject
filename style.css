@@ -316,6 +316,12 @@ overflow: visible; */
   color: white;
   text-align: center;
 }
+@media (max-width: 600px) {
+  .cta-button2 {
+    margin-right: 0px;
+  }
+}
+
 
 .users {
   background-color: gainsboro;
