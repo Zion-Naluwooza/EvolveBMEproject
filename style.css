@@ -16,7 +16,7 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
-   padding-top: 200px;
+   padding-top: 60px;
 }
 
 
@@ -29,14 +29,15 @@ nav {
   background-color: rgb(172, 171, 171);
   color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  /* padding: 20px; */
-  margin-bottom: 10px;
-  margin-top: 15px;
-  height: auto;
+  justify-content: space-between;
+  padding: 10px 20px;
+  /* margin-bottom: 10px;
+  margin-top: 15px; */
+  height: 60px;
   z-index: 5;
+  border: 2px solid maroon ;
 }
 
 /* .company-name {
@@ -49,15 +50,17 @@ nav {
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap: 20px;
+  gap: 15px;
    flex-wrap: wrap;
    justify-content: center;
+   margin-right: 100px;
+   padding: 0px;
 }
 
 .menu-items ul li a {
   color: #3b5f85;
   text-decoration: none;
-  font-size: larger;
+  font-size: 1rem;
   font-weight: bold;
   /* padding: 8px 0; */
 }
@@ -67,7 +70,7 @@ nav {
   margin-top: 20px; */
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 0px;
+  margin-top: 20px;
 }
 
 
@@ -75,12 +78,12 @@ nav {
 /* Responsive layout */
 @media (min-width: 768px) {
   nav {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
      align-items: center;
-      padding: 40px;
-    height: auto;
+      padding: 10px 40px;
+    height: 60px;
   }
 
   .logo {
@@ -89,7 +92,7 @@ nav {
 
   .menu-items ul{
     justify-content: flex-end;
-    gap:40px;
+    gap:20px;
   }
 }
 /* .team-container {
