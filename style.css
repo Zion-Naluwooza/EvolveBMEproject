@@ -272,6 +272,11 @@ If you don’t set a position, z-index has no effect. */
   font-size: 36px;
   margin-bottom: 0px;
 }
+.projects h4 {
+  margin-top: 20px;
+  color: white;
+  margin-bottom: 0px;
+}
 
 .project-container {
   padding: 80px 20px;
@@ -316,6 +321,32 @@ overflow: visible; */
   color: white;
   text-align: center;
 }
+.featureme {
+  padding:70px;
+  background-color: #ccc;
+
+  
+}
+.featureme h2 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #072e65;
+
+}
+.featureme p {
+  margin-bottom: 40px;
+}
+.featuremecta {
+  padding: 15px;
+  background-color: white;
+  /* margin-top: 100px; */
+  border-radius: 50px;
+  text-decoration: none;
+   color: #072e65;
+   font-weight: bold;
+}
+
+
 @media (max-width: 600px) {
   .cta-button2 {
     margin-right: 0px;
