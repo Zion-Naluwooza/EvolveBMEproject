@@ -26,7 +26,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(172, 171, 171);
+  background-color: white;
   color: #072e65;;
   display: flex;
   flex-direction: row;
@@ -37,7 +37,7 @@ nav {
   margin-top: 15px; */
   height: 60px;
   z-index: 5;
-  border: 2px solid maroon ;
+  border: 2px solid rgb(172, 171, 171) ;
 }
 
 /* .company-name {
@@ -56,6 +56,11 @@ nav {
    margin-right: 100px;
    padding: 0px;
    color: #072e65;;
+}
+.menu-items ul li:hover {
+  padding: 10px;
+  background-color: #a0a0a0;
+  border-radius: 50px;
 }
 
 .menu-items ul li a {
@@ -221,7 +226,12 @@ If you don’t set a position, z-index has no effect. */
 
 .about h2 {
   font-size: 36px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
+  color: #333;
+  padding: 0px;
+}
+.about p {
+  padding: 50px;
   color: #333;
 }
 
@@ -229,14 +239,14 @@ If you don’t set a position, z-index has no effect. */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+  /* max-width: 1200px; */
+  margin: 0px;
 }
 
 .about-box {
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 30px 20px;
+  /* padding: 30px 20px; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -249,7 +259,8 @@ If you don’t set a position, z-index has no effect. */
 
 .about-box h3 {
   font-size: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   color: #182c42;
 }
 
@@ -624,19 +635,21 @@ button:hover {
 
 
 .team {
-  padding: 80px;
+  padding: 40px;
   margin: 0px;
 }
 .team h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .team p {
-  margin-bottom: 50px;
+  padding-top: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .team-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   max-width: 1200px;
   margin: 0 auto;
@@ -644,11 +657,11 @@ button:hover {
 .team-box {
   /* border: 3px groove slateblue; */
   border-radius: 5px;
-  height: 300px;
+  height: 200px;
 }
 
 .team-box img {
-  border-radius: 1000px;
+  /* border-radius: 1000px; */
   clip-path: circle();
   /* border: 2px groove maroon; */
 }
